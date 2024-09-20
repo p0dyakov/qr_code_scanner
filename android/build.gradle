@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.android.tools.build:gradle:8.6.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -31,8 +31,9 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
+        namespace 'net.touchcapture.qr.flutterqr'
         // minSdkVersion is determined by Native View.
-        minSdkVersion 20
+        minSdkVersion 21
         targetSdkVersion 33
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
